@@ -19,106 +19,107 @@
     display: none;
   }
 
-  /*Header Styles*/
-  header {
-    background-color: #333; /* Change the background color to your preference */
-    color: #fff; /* Change the text color to your preference */
+/*Header Styles*/
+header {
+    background-color: #333;
+    color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 35px;
 }
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
     width: 140px;
     height: 165px;
-    margin-left: 70px;
+}
+
+.left-nav {
+    margin-right: 20px; /* Adjust the margin to your preference */
+}
+
+.right-nav {
+    margin-left: 20px; /* Adjust the margin to your preference */
 }
 
 .nav {
     list-style: none;
     display: flex;
-    margin-left: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
 }
 
 .nav li {
-    margin-right: 20px;
+    margin-right: 100px; /* Adjust the margin to your preference */
+    margin-left: 100px;
 }
 
 .nav a {
     text-decoration: none;
-    color: #fff; 
-    transition: color 0.3s; 
+    color: #fff;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
-    color: #3D3D3D; 
+    color: #3D3D3D;
 }
 
-.hero {
-    position: relative;
-    background: url('../media/hero_image.jpg') center/cover no-repeat;
-    height: 644px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Introduction Section Styles */
+.introduction-section {
+    padding: 40px; /* Adjust the padding to your preference */
     text-align: center;
+    margin: 20px auto; /* Add margin to center the section horizontally and provide space from the top */
 }
 
-/* Overlay with reduced opacity */
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* 30% opacity overlay */
-}
-
-.hero-text {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 70px;
-    background: rgba(0, 0, 0, 0); /* Transparent background for the text */
-    padding: 20px; /* Add padding to make the text more readable */
-}
-
-.hero-buttons {
+.introduction-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the container horizontally */
     align-items: center;
-    margin-top: 20px;
 }
 
-.hero-button {
-    background: #3D3D3D; /* Button background color */
-    color: #fff;
-    width: 239px;
-    height: 95px;
-    margin: 0 10px;
-    text-decoration: none;
-    border: none;
-    border-radius: 80px;
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; /* so i could click the buttons */
-    transition: background-color 0.3s, color 0.3s;
+.introduction-content {
+    max-width: 600px; /* Set the maximum width for the content */
 }
 
-.hero-button:hover {
-    background: #8A8A8A; /* Change background color on hover */
-    color: #3D3D3D; /* Change text color on hover */
+.introduction-content h2 {
+    font-size: 70px; /* Set the font size for the h2 element */
+    color: white;
+    margin-bottom: 30px;
 }
+
+.introduction-content p {
+    font-size: 30px; /* Set the font size for the p element */
+    color: white;
+    margin-bottom: 80px;
+}
+
+.circle-shape {
+    width: 488px; /* Set the width of the circle */
+    height: 488px; /* Set the height of the circle */
+    background-color: #333; /* Set the background color of the circle */
+    border-radius: 50%; /* Make it a circle with border-radius */
+    margin-left: 20px; /* Add margin to the left for space */
+}
+
+.contact-button {
+    padding: 10px 20px; /* Set padding for the button */
+    font-size: 41px; /* Set font size for the button text */
+    border-radius: 80px; /* Set the border radius for the button */
+    width: 273px; /* Set the width for the button */
+    height: 95px; /* Set the height for the button */
+    background-color: #414141; /* Set the background color for the button */
+    color: #fff; /* Set the text color for the button */
+}
+
 
 .welcome {
     display: flex;
