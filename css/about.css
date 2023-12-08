@@ -11,10 +11,11 @@
     margin-right: 50px; /* Adjust the margin as needed */
 }
 
-h2 {
+.about-container h2 {
     font-size: 70px;
     margin-bottom: 50px;
     margin-left: 90px;
+    color: white;
 }
 
 .about-circle {
@@ -30,4 +31,49 @@ h2 {
     max-width: 600px;
     font-size: 35px;
     line-height: 1.2;
+    color: white;
+}
+
+.my-section {
+    margin-top: 50px; /* Adjust the margin as needed */
+    margin: 0 auto; /* Center the section */
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    width: 1831px; /* Set a maximum width if necessary */
+    height: 100%;
+    background-color: #8A8A8A;
+    border-radius: 71px;
+    margin-bottom: 300px;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-box {
+    width: 300px;
+    margin: 10px;
+    border-radius: 47px;
+    overflow: hidden;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each image box for the first two rows */
+    box-sizing: border-box;
+}
+
+.image-box:nth-child(n+7) {
+    flex: 0 0 calc(50% - 20px); /* Adjust the width of each image box for the last two rows */
+    margin-top: 60px; /* Add space between the rows */
+}
+
+.image-box img {
+    width: 300px;
+    border-radius: 47px;
+    margin: 40px;
+}
+
+.image-caption {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center; /* Center the caption text */
 }
