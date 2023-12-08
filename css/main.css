@@ -20,8 +20,7 @@
   }
 
 /*Header Styles*/
-header {
-    background-color: #333;
+header { 
     color: #fff;
     padding: 10px;
     display: flex;
@@ -35,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -55,7 +55,7 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .nav li {
@@ -78,6 +78,7 @@ header {
     padding: 40px; /* Adjust the padding to your preference */
     text-align: center;
     margin: 20px auto; /* Add margin to center the section horizontally and provide space from the top */
+    margin-bottom: 300px;
 }
 
 .introduction-container {
@@ -112,101 +113,378 @@ header {
 
 .contact-button {
     padding: 10px 20px; /* Set padding for the button */
-    font-size: 41px; /* Set font size for the button text */
+    font-size: 40px; /* Set font size for the button text */
     border-radius: 80px; /* Set the border radius for the button */
     width: 273px; /* Set the width for the button */
     height: 95px; /* Set the height for the button */
     background-color: #414141; /* Set the background color for the button */
     color: #fff; /* Set the text color for the button */
+    transition: background-color 0.3s ease-out, color 0.3s ease-out; /* Add ease-out transition for smoother hover effect */
+    cursor: pointer;
 }
 
+.contact-button:hover {
+    background-color: #8A8A8A; /* Change the background color on hover */
+    color: #414141; /* Change the text color on hover */
+}
 
-.welcome {
+/* About Me Section */
+.about-me-container {
+    width: 1743px;
+    height: 1243px;
+    border-radius: 71px;
+    background-color: #8A8A8A; /* You can change the background color */
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin: 100px;
-}
-
-.welcome h1 {
-    font-size: 70px;
-    color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-.box-container {
-    display: flex;
+    justify-content: space-around;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-bottom: 300px;
     margin-top: 100px;
 }
 
-.box-container-inner {
+.about-me-text {
+    width: 40%;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 35px;
+    color: white;
+}
+
+.about-me-text h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about-me-image {
+    width: 592px;
+    height: 790px;
+    border-radius: 106px;
+}
+
+/* Demo Reel */
+.demo-reel {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    margin: 100px; /* Adjust the margin to your preference */
+    margin-bottom: 300px;
+}
+
+.demo-reel-video {
+    width: 1680px; /* Set the width of the video */
+    height: 908px; /* Set the height of the video */
+    border-radius: 47px;
+}
+
+/* Skills Section */
+.my-skills-section {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.my-skills-section h2 {
+    font-size: 70px;
+}
+
+.my-skills-section p {
+    font-size: 36px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.skill-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 47px;
+    margin-bottom: 20px;
+}
+
+/* Skills Overview */
+
+.skills-overview-section {
     display: flex;
     flex-direction: column;
-    margin-left: 50px; /* Add margin for separation between box-color1 and box-container-inner */
+    align-items: center; /* Center the section horizontally */
+    margin: 40px;
+    margin-bottom: 500px;
 }
 
-.box-color1 {
-    background-color: red;
-    width: 486px;
-    height: 604px;
-    margin-right: 50px;
+.box-container {
+    width: 1649px;
+    height: 328px;
+    border-radius: 35px;
+    background-color: #8A8A8A; /* You can change the background color */
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.box-color2 {
-    background-color: black;
-    width: 847px;
-    height: 498px;
+.box-container h3 {
+    font-size: 30px;
+    color: white;
+    margin: 20px;
 }
 
-.box-color3 {
-    background-color: green;
-    width: 273px;
-    height: 95px;
-    margin-left: 550px;
-}
-
-
-.skills .skills-box {
-    background-color: #8A8A8A;
-    padding: 20px;
-    width: 100%;
-    height: 1095px;
-    margin: 0 auto;
-}
-
-.skills .skills-box h1 {
-    font-size: 70px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.skills .box-container {
+.skill-images {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the boxes horizontally */
-    align-items: center; /* Center the boxes vertically */
+    justify-content: center;
+}
+
+.skills-image {
+    width: 169px;
+    height: 169px;
+    border-radius: 49px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-image:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect on hover */
+}
+
+.skill-image:hover::after {
+    content: attr(data-label); /* Display the image name */
+    position: absolute;
+    bottom: -30px; /* Adjust the distance from the image */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: white;
+}
+
+/* My Works Section */
+.my-works-section {
+    width: 1835px;
+    height: 1850px;
+    background-color: #8A8A8A; /* You can change the background color */
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px auto; /* Center the section horizontally */
+    margin-bottom: 300px;
+}
+
+.works-container {
+    padding: 40px;
+}
+
+.my-works-section h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.my-works-section h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.work-image {
+    width: 1717px;
+    height: 965px;
+    border-radius: 65px;
+    margin-bottom: 40px;
+}
+
+.additional-works {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
     margin-top: 20px;
 }
 
-.skills .box-container .box-color1,
-.skills .box-container .box-color2,
-.skills .box-container .box-color3 {
-    width: 400px;
-    height: 400px;
+.work-item {
+    width: 700px;
+    height: 430px;
+    border-radius: 36px;
 }
 
-.skills .box-container .box-color1 {
-    background-color: red;
+.work-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
 }
 
-.skills .box-container .box-color2 {
-    background-color: black;
+.more-works-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 80px;
+    background-color: #414141; /* You can change the background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-.skills .box-container .box-color3 {
-    background-color: green;
+.more-works-button:hover {
+    background-color: #8A8A8A;
+    color: #414141;
+    opacity: 0.8;
 }
 
+/* Footer Section */
 
+.footer-section {
+    width: 100%;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #333; /* You can change the background color */
+    text-align: center;
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; /* Center everything horizontally */
+    height: 100%;
+}
+
+.upper-footer {
+    padding: 20px 0; /* Reduce padding */
+}
+
+.upper-footer h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #414141; /* You can change the background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.contact-button:hover {
+    background-color: #8A8A8A;
+    color: #414141;
+}
+
+.footer-line {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+
+.lower-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0; /* Reduce padding */
+}
+
+.left-section,
+.center-section,
+.right-section,
+.social-media-section {
+    flex: 1;
+    text-align: center;
+}
+
+.left-section {
+    margin-right: 500px;
+}
+
+.right-section {
+    margin-left: 500px;
+    margin-right: 20px;
+}
+
+.social-media-section {
+    text-align: right;
+    margin-left: 20px;
+}
+
+.social-media-section h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    text-align: center;
+}
+
+.circle {
+    width: 265px;
+    height: 265px;
+    background-color: #414141; /* You can change the background color */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 18px;
+    color: white;
+}
+
+.logo {
+    width: 140px;
+    height: 165px;
+    margin: 0 auto 20px; 
+    margin-left: 30px;
+}
+
+.right-section,
+.social-media-section {
+    text-align: left;
+}
+
+.right-section h2,
+.left-section h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav ul,
+.social-media-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li,
+.social-media-section li {
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the list items */
+}
+nav a,
+.social-media-section a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-out;
+}
+
+nav a:hover,
+.social-media-section a:hover {
+    color: #8A8A8A;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
