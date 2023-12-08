@@ -2,10 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 200px;
 }
 
 .container h2 {
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 200px;
+    margin-right: auto;
+    font-size: 70px;
+    color: white;
+    margin-bottom: 70px;
 }
 
 .gallery {
@@ -29,21 +34,26 @@
 }
 
 .picture1 {
-    width: 1690px;
-    height: 820px;
+    width: 1600px;
+    height: 720px;
     border-radius: 108px;
+    margin: 30px;
+    margin-bottom: 90px;
 }
 
 .picture2,
 .picture3 {
-    width: 820px;
-    height: 820px;
+    width: 700px;
+    height: 700px;
     border-radius: 77px;
     margin-right: 20px; /* Adjust as needed */
+    margin: 40px;
+    margin-bottom: 90px;
 }
 
 .picture4 {
-    width: 1690px;
-    height: 820px;
+    width: 1600px;
+    height: 720px;
     border-radius: 108px;
+    margin-top: 20px;
 }
