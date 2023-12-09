@@ -1,0 +1,92 @@
+.contact-section {
+    width: 1700px;
+    height: 705px;
+    border-radius: 61px;
+    background-color: white;
+    margin: 50px auto; /* Adjust the margin as needed */
+    padding: 20px;
+    position: relative;
+    display: flex; /* Make the container a flex container */
+    align-items: center; /* Center items vertically in the container */
+    margin-bottom: 300px;
+  }
+
+  .contact-left {
+    flex-shrink: 0; /* Do not shrink this item */
+    margin-right: 20px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 270px;
+    margin-left: 80px;
+  }
+
+  .profile-picture {
+    width: 266px;
+    height: 266px;
+    border-radius: 50%;
+    background-color: #ccc; /* Add your background color or image later */
+    margin-left: 20px;
+  }
+
+  .contact-right {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    margin-left: 800px;
+  }
+
+  .work-together {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 55px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 500px;
+    height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #454545;
+    border-radius: 16px;
+    color: white;
+  }
+
+  textarea {
+    width: 500px;
+    height: 146px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #454545;
+    border-radius: 16px;
+    color: white;
+  }
+
+  button {
+    width: 380px;
+    padding: 10px 20px;
+    background-color: #454545;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 53px;
+  }
