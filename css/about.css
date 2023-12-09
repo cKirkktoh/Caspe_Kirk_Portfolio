@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     margin-top: 200px;
+    margin-bottom: 300px;
 }
 
 .about-left-section {
@@ -34,16 +35,21 @@
     color: white;
 }
 
+/* What I'm Doing Section */
 .my-section {
     margin-top: 50px; /* Adjust the margin as needed */
     margin: 0 auto; /* Center the section */
     text-align: center;
-    width: 80%; /* Adjust the width as needed */
     width: 1831px; /* Set a maximum width if necessary */
     height: 100%;
     background-color: #8A8A8A;
     border-radius: 71px;
     margin-bottom: 300px;
+    color: white;
+}
+
+.my-section h2 {
+    font-size: 70px;
 }
 
 .images-container {
@@ -76,4 +82,55 @@
     font-size: 40px;
     margin-top: 10px;
     text-align: center; /* Center the caption text */
+}
+
+/* Education Section */
+
+.education-section {
+    margin-bottom: 300px;
+}
+
+.education-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust the margin as needed */
+    color: white;
+}
+
+.education-section h2 {
+    margin-left: 270px  ;
+    font-size: 70px;
+    color: white;
+}
+
+.education-left{
+    margin-left: 300px;
+}
+
+.education-left img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+}
+
+.education-center {
+    text-align: center;
+}
+
+.education-date {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 140px;
+}
+
+.education-right {
+    text-align: right;
+    margin-right: 230px; /* Adjust the margin as needed */
+}
+
+.education-school,
+.education-program {
+    font-size: 40px; /* Adjust the font size as needed */
+    margin: 5px 0;
 }
