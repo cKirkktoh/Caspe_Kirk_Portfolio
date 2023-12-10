@@ -3,16 +3,16 @@
     height: 705px;
     border-radius: 61px;
     background-color: white;
-    margin: 50px auto; /* Adjust the margin as needed */
+    margin: 50px auto;
     padding: 20px;
     position: relative;
-    display: flex; /* Make the container a flex container */
-    align-items: center; /* Center items vertically in the container */
+    display: flex;
+    align-items: center;
     margin-bottom: 300px;
   }
 
   .contact-left {
-    flex-shrink: 0; /* Do not shrink this item */
+    flex-shrink: 0;
     margin-right: 20px;
   }
 
@@ -21,6 +21,10 @@
     font-weight: bold;
     margin-bottom: 270px;
     margin-left: 80px;
+  }
+
+  .contact-text p {
+    font-size: 16px;
   }
 
   .profile-picture {
@@ -38,10 +42,10 @@
   }
 
   .contact-right {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 800px;
+    margin-left: 700px;
   }
 
   .work-together {

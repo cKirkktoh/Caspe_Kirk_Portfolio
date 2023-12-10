@@ -20,7 +20,7 @@
   }
 
 /*Header Styles*/
-header { 
+header {
     color: #fff;
     padding: 10px;
     display: flex;
@@ -44,11 +44,11 @@ header {
 }
 
 .left-nav {
-    margin-right: 20px; /* Adjust the margin to your preference */
+    margin-right: 20px;
 }
 
 .right-nav {
-    margin-left: 20px; /* Adjust the margin to your preference */
+    margin-left: 20px;
 }
 
 .nav {
@@ -60,46 +60,57 @@ header {
 }
 
 .nav li {
-    margin-right: 100px; /* Adjust the margin to your preference */
+    margin-right: 100px;
     margin-left: 100px;
 }
 
 .nav a {
     text-decoration: none;
     color: #fff;
+    position: relative;
     transition: color 0.3s;
 }
 
-.nav a:hover {
-    color: #3D3D3D;
+.nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.5s;
 }
+
+.nav a:hover::after {
+    width: 100%;
+}
+
 
 /* Introduction Section Styles */
 .introduction-section {
-    padding: 40px; /* Adjust the padding to your preference */
+    padding: 40px;
     text-align: center;
-    margin: 20px auto; /* Add margin to center the section horizontally and provide space from the top */
+    margin: 20px auto; 
     margin-bottom: 300px;
 }
 
 .introduction-container {
     display: flex;
-    justify-content: center; /* Center the container horizontally */
+    justify-content: center;
     align-items: center;
 }
 
 .introduction-content {
-    max-width: 600px; /* Set the maximum width for the content */
+    max-width: 600px;
 }
 
 .introduction-content h2 {
-    font-size: 70px; /* Set the font size for the h2 element */
+    font-size: 70px;
     color: white;
     margin-bottom: 30px;
 }
 
 .introduction-content p {
-    font-size: 30px; /* Set the font size for the p element */
+    font-size: 30px;
     color: white;
     margin-bottom: 80px;
 }
@@ -124,20 +135,20 @@ header {
 }
 
 .contact-button {
-    padding: 10px 20px; /* Set padding for the button */
-    font-size: 40px; /* Set font size for the button text */
-    border-radius: 80px; /* Set the border radius for the button */
-    width: 273px; /* Set the width for the button */
-    height: 95px; /* Set the height for the button */
-    background-color: #414141; /* Set the background color for the button */
-    color: #fff; /* Set the text color for the button */
-    transition: background-color 0.3s ease-out, color 0.3s ease-out; /* Add ease-out transition for smoother hover effect */
+    padding: 10px 20px;
+    font-size: 40px;
+    border-radius: 80px;
+    width: 273px;
+    height: 95px;
+    background-color: #414141;
+    color: #fff;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
     cursor: pointer;
 }
 
 .contact-button:hover {
-    background-color: #8A8A8A; /* Change the background color on hover */
-    color: #414141; /* Change the text color on hover */
+    background-color: #8A8A8A;
+    color: #414141;
 }
 
 /* About Me Section */
@@ -145,12 +156,12 @@ header {
     width: 1743px;
     height: 1243px;
     border-radius: 71px;
-    background-color: #8A8A8A; /* You can change the background color */
+    background-color: #8A8A8A;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
     margin-bottom: 300px;
     margin-top: 100px;
 }
@@ -179,15 +190,15 @@ header {
 /* Demo Reel */
 .demo-reel {
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
-    margin: 100px; /* Adjust the margin to your preference */
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
     margin-bottom: 300px;
 }
 
 .demo-reel-video {
-    width: 1300px; /* Set the width of the video */
-    height: 850px; /* Set the height of the video */
+    width: 1300px;
+    height: 850px;
     border-radius: 47px;
 }
 
@@ -231,7 +242,7 @@ header {
 .skills-overview-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the section horizontally */
+    align-items: center;
     margin: 40px;
     margin-bottom: 500px;
 }
@@ -240,7 +251,7 @@ header {
     width: 1649px;
     height: 328px;
     border-radius: 35px;
-    background-color: #8A8A8A; /* You can change the background color */
+    background-color: #8A8A8A;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -266,13 +277,13 @@ header {
 }
 
 .skills-image:hover {
-    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .skill-image:hover::after {
-    content: attr(data-label); /* Display the image name */
+    content: attr(data-label);
     position: absolute;
-    bottom: -30px; /* Adjust the distance from the image */
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
@@ -283,10 +294,10 @@ header {
 .my-works-section {
     width: 1835px;
     height: 1850px;
-    background-color: #8A8A8A; /* You can change the background color */
+    background-color: #8A8A8A; 
     border-radius: 20px;
     text-align: center;
-    margin: 40px auto; /* Center the section horizontally */
+    margin: 40px auto; 
     margin-bottom: 300px;
 }
 
@@ -311,6 +322,7 @@ header {
     height: 800px;
     border-radius: 65px;
     margin-bottom: 40px;
+    border: 8px solid #3D3D3D;
 }
 
 .additional-works {
@@ -330,13 +342,14 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 36px;
+    border: 8px solid #3D3D3D;
 }
 
 .more-works-button {
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 80px;
-    background-color: #414141; /* You can change the background color */
+    background-color: #414141;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease-out, color 0.3s ease-out, opacity 0.3s ease-out;
@@ -356,21 +369,21 @@ header {
     border-top-right-radius: 80px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: #333; /* You can change the background color */
+    background-color: #333;
     text-align: center;
-    padding: 40px 0; /* Add padding to the top and bottom */
+    padding: 40px 0;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; /* Center everything horizontally */
+    align-items: center;
     height: 100%;
 }
 
 .upper-footer {
-    padding: 20px 0; /* Reduce padding */
+    padding: 20px 0;
 }
 
 .upper-footer h1 {
@@ -383,7 +396,7 @@ header {
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 8px;
-    background-color: #414141; /* You can change the background color */
+    background-color: #414141;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease-out, color 0.3s ease-out;
@@ -404,7 +417,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0; /* Reduce padding */
+    padding: 20px 0; 
 }
 
 .left-section,
@@ -433,7 +446,7 @@ header {
     font-size: 25px;
     color: white;
     margin-bottom: 10px;
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: nowrap;
     text-align: center;
 }
 
@@ -485,7 +498,7 @@ nav ul,
 nav li,
 .social-media-section li {
     margin-bottom: 10px;
-    text-align: center; /* Center-align the list items */
+    text-align: center;
 }
 nav a,
 .social-media-section a {
@@ -500,7 +513,6 @@ nav a:hover,
     color: #8A8A8A;
 }
 
-/* works.html */
 
 
 .fade-in {

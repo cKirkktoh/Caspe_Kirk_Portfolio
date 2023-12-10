@@ -32,6 +32,14 @@
 
 .picture img {
     border-radius: 0; /* Reset border-radius for images within .picture */
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.picture img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .picture1 {
@@ -40,12 +48,13 @@
     border-radius: 108px;
     margin: 30px;
     margin-bottom: 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .picture2,
 .picture3 {
     width: 700px;
-    height: 700px;
+    height: 100%;
     border-radius: 77px;
     margin-right: 20px; /* Adjust as needed */
     margin: 40px;
@@ -56,5 +65,4 @@
     width: 1600px;
     height: 720px;
     border-radius: 108px;
-    margin-top: 40px;
 }
