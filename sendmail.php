@@ -4,29 +4,24 @@ require_once('connect.php');
 
 ///gather the form content
 $fname = $_POST['first_name'];
-$lname = $_POST['last_name'];
 $email = $_POST['email'];
-$msg = $_POST['comments'];
+$msg = $_POST['message'];
 
 $errors = [];
 
 //validate and clean these values
 
 $fname = trim($fname);
-$lname = trim($lname);
 $email = trim($email);
 $msg = trim($msg);
 
-if(empty($lname)) {
-    $errors['last_name'] = 'Last Name cant be empty';
-}
 
 if(empty($fname)) {
     $errors['first_name'] = 'First Name cant be empty';
 }
 
 if(empty($msg)) {
-    $errors['comments'] = 'Comment field cant be empty';
+    $errors['message'] = 'Comment field cant be empty';
 }
 
 if(empty($email)) {
@@ -39,7 +34,7 @@ if(empty($errors)) {
 
     //insert these values as a new row in the contacts table
 
-    $query = "INSERT INTO contacts (name, email, message) VALUES('$name','$email','$msg')";
+    $query = "INSERT INTO contacts (fullname, email, message) VALUES('$fname','$email','$msg')";
 
     if(mysqli_query($connect, $query)) {
 
