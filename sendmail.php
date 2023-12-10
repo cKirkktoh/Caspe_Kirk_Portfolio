@@ -55,7 +55,7 @@ $message .= "Email: ".$email."\n\n";
 
 mail($to,$subject,$message);
 
-header('Location: thank_you.php');
+header('Location: sent.php');
 
 }
 

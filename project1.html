@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Kirk Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-nav">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+            <img class="logo" src="images/logo_white.svg" alt="Kirk Caspe Logo">
+            <div class="right-nav">
+                <ul class="nav">
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>The Earbuds project was a venture aimed at creating cutting-edge wireless earbuds...</p>
+        <div class="main-work fade-in">
+            <img src="images/earbuds_pic_1.jpg" alt="Main Work" class="work-image fade-in">
+        </div>
+      </section>
+    
+      <section id="goals">
+        <h2>Goals</h2>
+        <ul>
+          <li>High-Quality Audio</li>
+          <li>Elegant Design</li>
+          <li>Advanced Features</li>
+        </ul>
+      </section>
+
+      <section class="model-box">
+        <h2>3D Model</h2>
+        <div class="model">
+            <!-- I will add my model here -->
+            <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="2" shadow-softness="0.51" exposure="1.36">
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.8855590756496261m 0.5410284006668522m -0.33732516545365315m" data-normal="2.4492910190738376e-16m 0.002034669446107562m -0.9999979300579803m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1">
+                        <h2>Second Speaker</h2>
+                        <p>the second speaker in these cutting-edge earbuds—a powerhouse of audio precision. This finely-tuned component complements its counterpart, delivering a rich and immersive listening experience. Whether you're diving into the deepest bass or reveling in crystal-clear highs, the second speaker ensures a balanced and dynamic soundstage. With advanced technology, it harmonizes seamlessly with the primary speaker, enhancing your audio journey by adding depth and detail. Elevate your auditory senses with this dual-speaker marvel, designed to immerse you in a world of sound like never before.</p>
+                      </div>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" data-position="-1.3672195083463088m 0.16380990875213175m -0.20388933770909454m" data-normal="0.14820287351218397m -0.0019174731004724655m -0.9889551211150286m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2">
+                        <h2>Long Battery Life</h2>
+                        <p>Enjoy extended listening sessions with a long-lasting battery. The charging case provides additional power on the go.</p>
+                        <img src="images/6.jpg">
+                      </div>
+                </button>
+                <button class="Hotspot" slot="hotspot-3" data-position="-1.253952344661447m 0.5271929142455118m -0.31163398006768717m" data-normal="0.381556639062227m 0.03866258197176546m -0.9235365374162595m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3">
+                        <h2>Audio Technology</h2>
+                        <p>Indulge in superior sound with our cutting-edge audio tech. High dynamic range amp for exceptional quality. Enjoy Adaptive Audio, ANC, and Transparency mode for personalized listening. Ensure comfort and safety with features like Conversation Awareness, Personalized Volume, and Loud Noise Reduction. Experience personalized spatial audio, dynamic head tracking, and Adaptive EQ for a tailor-made auditory journey</p>
+                        <img src="images/3.jpg">
+                      </div>
+                </button>
+                <button class="Hotspot" slot="hotspot-4" data-position="-1.1399272491659407m 0.5119584416038548m -0.3177693801811818m" data-normal="0.27720088436727097m 0.05347686258822964m -0.9593226229343924m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4">
+                        <h2>Dust and Sweat Resistant Ear Piece</h2>
+                        <p>Elevate your active lifestyle with our earpieces—dust and sweat-resistant for durability during workouts and outdoor adventures. Enjoy uninterrupted music in any environment.</p>
+                      </div>
+                </button>
+                <button class="Hotspot" slot="hotspot-5" data-position="-0.9136397405787489m 0.5301259149517015m -0.1973237043171012m" data-normal="-0.30570117111860956m -0.1817345026930331m 0.9346225786421097m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-5">
+                        <h2>Active Noise Cancellation (ANC)</h2>
+                        <p> Immerse yourself in pure sound with Active Noise Cancellation (ANC). Our advanced technology eliminates external distractions, letting you experience your music or calls with unparalleled clarity. Enjoy a cocoon of audio serenity, wherever you are.</p>
+                    </div>
+                </button>
+                <button class="Hotspot" slot="hotspot-6" data-position="-0.8252203245038637m 0.12794322162048433m -0.1578807406636614m" data-normal="0.00010931392398964891m -0.9999999790845358m 0.00017286235567642318m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-6">
+                        <h2>Fast Charging</h2>
+                        <p> Power up your listening experience with our Fast Charging feature. Say goodbye to long waits—just a brief charging session provides extended playtime. Keep the music flowing effortlessly, ensuring your earbuds are always ready for the next beat.</p>
+                    </div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div>
+            </model-viewer>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="upper-footer">
+                <h1>Wanna Work Together?</h1>
+                <a href="contact.html" class="contact-button">Contact Me</a>
+                <hr class="footer-line">
+            </div>
+
+            <div class="lower-footer">
+                <div class="left-section">
+                    <div class="circle"></div>
+                    <p>Kirk Caspe</p>
+                </div>
+
+                <div class="center-section">
+                    <img class="logo-footer" src="images/logo_white.svg" alt="Kirk Caspe Logo">
+                </div>
+
+                <div class="right-section">
+                    <div class="navigation-section">
+                        <h2>Navigations</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                                <li><a href="works.html">Works</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="social-media-section">
+                    <h2>Social Media</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.facebook.com/kirk.caspe">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/kirkcsp/">Instagram</a></li>
+                            <li><a href="https://twitter.com/kirk_csp">Twitter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</html>
