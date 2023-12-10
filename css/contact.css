@@ -100,3 +100,48 @@
     font-size: 16px;
     margin-left: 53px;
   }
+
+  @media only screen and (max-width: 430px) {
+    .contact-section {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    .contact-left,
+    .contact-right {
+      margin: 0;
+      width: 100%;
+    }
+  
+    .contact-title {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  
+    .profile-picture {
+      margin-left: 0;
+      margin-bottom: 20px;
+      margin-left: 44px;
+    }
+  
+    .contact-right {
+      margin-left: 0;
+    }
+  
+    .work-together {
+      margin-left: 0;
+      font-size: 24px;
+    }
+  
+    input,
+    textarea,
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  

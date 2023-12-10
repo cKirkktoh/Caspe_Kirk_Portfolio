@@ -241,3 +241,59 @@ model-viewer {
     border-radius: 16px;
   }
   
+
+  @media screen and (max-width: 430px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .main-work {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    model-viewer {
+        height: auto;
+    }
+
+    .Hotspot {
+        width: 30px;
+        height: 25px;
+    }
+
+    .HotspotAnnotation {
+        font-size: 14px;
+        max-width: 200px;
+        left: calc(100% + 0.5em);
+    }
+
+    model-viewer::part(default-progress-bar) {
+        height: 20px;
+    }
+
+    #ar-button {
+        padding: 0px 10px 0px 30px;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .model-box {
+        height: auto;
+    }
+
+    .product-images h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+    }
+
+    .video-box h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}

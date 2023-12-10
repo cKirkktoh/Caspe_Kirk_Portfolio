@@ -529,6 +529,245 @@ nav a:hover,
 }
 
 
+@media only screen and (max-width: 430px) {
+    .header-container {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .nav li {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .introduction-container {
+        flex-direction: column;
+        align-items: center; /* Center items in column direction */
+    }
+
+    .introduction-section {
+        margin-bottom: 100px;
+    }
+
+    .introduction-content h2 {
+        font-size: 40px;
+    }
+
+    .introduction-content p {
+        font-size: 20px;
+    }
+
+    .circle-shape {
+        width: 200px; /* Adjust this value according to your preference */
+        height: 200px; /* Adjust this value accordingly to maintain the aspect ratio */
+        margin-left: 0;
+        margin-top: 20px; /* Add some margin for spacing */
+        background-position-x: -5px;
+        background-position-y: -50px;
+    }
+
+    .contact-button {
+        font-size: 20px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .about-me-container {
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .about-me-text {
+        width: 80%;
+        font-size: 20px;
+        padding: 20px;
+        transform: translateY(0);
+    }
+
+    .about-me-text h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .about-me-image {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .demo-reel-video {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .my-skills-section h2 {
+        font-size: 40px;
+    }
+
+    .my-skills-section p {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .skill-item {
+        margin: 10px;
+    }
+
+    .skill-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .skills-overview-section {
+        margin-bottom: 100px;
+    }
+
+    .box-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-container h3 {
+        font-size: 20px;
+    }
+
+    .skills-image {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+
+    .my-works-section {
+        width: auto;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .my-works-section h2 {
+        font-size: 30px;
+    }
+
+    .my-works-section h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .work-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .additional-works {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .work-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .work-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .more-works-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-section {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .upper-footer h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-line {
+        width: 100%;
+    }
+
+    .left-section,
+    .right-section,
+    .social-media-section {
+        margin: 0;
+    }
+
+    .right-section,
+    .social-media-section {
+        margin-left: 0;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        background-position-y: -50px;
+    }
+
+    .left-section p {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .right-section h2,
+    .left-section h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .right-section a,
+    .left-section a {
+        font-size: 10px;
+    }
+
+    .social-media-section h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .social-media-section a{
+        font-size: 10px;
+    }
+
+
+    .logo-footer {
+        margin: 0 auto 10px;
+    }
+
+    .right-section,
+    .social-media-section {
+        text-align: center;
+    }
+}
+
 
 .fade-in {
     opacity: 0;
