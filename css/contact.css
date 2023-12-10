@@ -27,8 +27,14 @@
     width: 266px;
     height: 266px;
     border-radius: 50%;
-    background-color: #ccc; /* Add your background color or image later */
-    margin-left: 20px;
+    margin-left: 20px; 
+    background-size: cover;
+    background: url(../images/kirk_pfp.jpg);
+    border-radius: 50%;
+    margin-left: 20px; 
+    background-size: cover;
+    background-position-y: -80px;
+    border: 8px solid #3d3d3d;
   }
 
   .contact-right {
