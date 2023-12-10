@@ -18,3 +18,4 @@ window.addEventListener('resize', checkVisibility);
 // Initial check on page load
 checkVisibility();
 })();
+
