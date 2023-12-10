@@ -24,7 +24,7 @@ checkVisibility();
   const tl = gsap.timeline({defaults: {ease: 'power2.out'}});
 
   tl.to(".slider", {y: "-100%", duration: 1.2})
-  tl.to(".introduction-content", {y: "0%", duration: 1.4}, "-=1")
+  tl.to(".introduction-content", {y: "0%", duration: 2.1}, "-=1")
   tl.to(".circle-shape", {y: "0%", duration: 1.5}, "-=1")
   tl.to(".about-me-text", {y: "0%", duration: 1.5}, "-=1")
   tl.to(".skills-image", {y: "0%", duration: 0.2}, "-=1")
