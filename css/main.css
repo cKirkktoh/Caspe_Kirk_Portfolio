@@ -84,6 +84,17 @@ header {
     width: 100%;
 }
 
+/* slider */
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #18181a;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
 
 /* Introduction Section Styles */
 .introduction-section {
@@ -101,6 +112,7 @@ header {
 
 .introduction-content {
     max-width: 600px;
+    transform: translateY(200%);
 }
 
 .introduction-content h2 {
@@ -127,6 +139,7 @@ header {
     border: 8px solid #8A8A8A;
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(150%);
 }
 
 .circle-shape:hover {
@@ -173,6 +186,7 @@ header {
     text-align: justify;
     font-size: 35px;
     color: white;
+    transform: translateY(150%);
 }
 
 .about-me-text h2 {
@@ -274,6 +288,7 @@ header {
     border-radius: 49px;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
+    transform: translateY(150%);
 }
 
 .skills-image:hover {
