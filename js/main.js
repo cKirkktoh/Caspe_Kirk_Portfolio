@@ -1,3 +1,5 @@
+console.log('Script loaded!');
+
 (() => {
 const elements = document.querySelectorAll('.fade-in');
 
@@ -59,3 +61,5 @@ checkVisibility();
       hotspot.addEventListener("mouseout", hideInfo);
   });
 })();
+
+//burger menu 

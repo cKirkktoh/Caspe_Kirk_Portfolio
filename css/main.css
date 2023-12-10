@@ -84,6 +84,17 @@ header {
     width: 100%;
 }
 
+.menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
 /* slider */
 .slider {
     position: fixed;
@@ -530,18 +541,42 @@ nav a:hover,
 
 
 @media only screen and (max-width: 430px) {
-    .header-container {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav {
+        display: none;
         flex-direction: column;
-        margin-bottom: 20px;
+        text-align: center;
+        position: absolute;
+        top: 70px; /* Adjust as needed based on your header height */
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    #menu-toggle:checked + .menu-icon + header .nav {
+        display: flex;
     }
 
     .nav li {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin: 0;
+        padding: 15px;
     }
 
     .nav a {
-        font-size: 20px;
+        font-size: 20px; /* Adjust the font size as needed */
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        transition: color 0.3s;
+    }
+
+    .nav a:hover {
+        color: #00bcd4; /* Adjust the hover color as needed */
     }
 
     .introduction-container {
