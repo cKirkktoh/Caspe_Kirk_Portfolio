@@ -28,7 +28,7 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap; /* Allow the row to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .picture img {
@@ -46,7 +46,7 @@
 /* Styles for larger screens (desktop) */
 @media screen and (min-width: 431px) {
     .container h2 {
-        font-size: 30px; /* Adjust as needed for desktop */
+        font-size: 30px;
     }
 
     .picture1 {

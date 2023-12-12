@@ -550,7 +550,7 @@ nav a:hover,
         flex-direction: column;
         text-align: center;
         position: absolute;
-        top: 70px; /* Adjust as needed based on your header height */
+        top: 70px;
         left: 0;
         right: 0;
         background-color: #333;
@@ -567,7 +567,7 @@ nav a:hover,
     }
 
     .nav a {
-        font-size: 20px; /* Adjust the font size as needed */
+        font-size: 20px;
         color: #fff;
         text-decoration: none;
         display: block;
@@ -576,12 +576,12 @@ nav a:hover,
     }
 
     .nav a:hover {
-        color: #00bcd4; /* Adjust the hover color as needed */
+        color: #00bcd4; 
     }
 
     .introduction-container {
         flex-direction: column;
-        align-items: center; /* Center items in column direction */
+        align-items: center;
     }
 
     .introduction-section {
@@ -597,10 +597,10 @@ nav a:hover,
     }
 
     .circle-shape {
-        width: 200px; /* Adjust this value according to your preference */
-        height: 200px; /* Adjust this value accordingly to maintain the aspect ratio */
+        width: 200px;
+        height: 200px; 
         margin-left: 0;
-        margin-top: 20px; /* Add some margin for spacing */
+        margin-top: 20px;
         background-position-x: -5px;
         background-position-y: -50px;
     }
