@@ -1,194 +1,346 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Kirk Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Noah Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-    <header>
-        <div class="header-container">
-            <div class="left-nav">
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                </ul>
-            </div>
-            <img class="logo" src="images/logo_white.svg" alt="Kirk Caspe Logo">
-            <div class="right-nav">
-                <ul class="nav">
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <section class="introduction-section fade-in">
-        <div class="introduction-container">
-            <div class="introduction-content">
-                <h2>My Portfolio Site</h2>
-                <p>My name is Kirk Caspe, a college student specializing in Interactive Media Design at Fanshawe's London Downtown Campus. Armed with skills in web design, programming, and 3-D animation.</p>
-                <a href="contact.html" class="contact-button">Contact Me!</a>
-            </div>
-            <div class="circle-shape"></div>
-        </div>
-    </section>
-    
-    <div class="slider"></div>
-
-    <div class="about-me-container fade-in">
-        <div class="about-me-text">
-            <h2>Kirk Caspe</h2>
-            <p>
-                I am a Filipino born in Saudi Arabia and I've had a lot of interest when it comes to photo or video editing.
-                I graduated high school and attended Fanshawe College's Interactive Media Design Program. At first, I really had
-                no idea and of course, no background about this whole program. I was clueless at first, but as time goes by, my
-                skills in each category started to improve. Right now, I am mostly into logo designing. I learned so much that
-                I couldn't wait to help a lot of clients in the coming future.
-            </p>
-        </div>
-        <img src="images/kirk_portrait.jpg" alt="Your Name" class="about-me-image">
-    </div>
-    
-    <div class="demo-reel fade-in">
-        <video src="videos/Caspe_Kirk_DemoReel.mp4" class="demo-reel-video" controls></video>
-    </div>
-
-    <section class="my-skills-section fade-in">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-item">
-                <img src="images/logo-design.jpg" alt="Skill 1" class="skill-image">
-                <p>I like Logo designing is enjoyable because it merges creativity with visual communication, offering a sense of accomplishment when your designs connect with clients and their audience.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/coding.jpg" alt="Skill 2" class="skill-image">
-                <p>Coding is also nice 
-                    but I'm working on improving my coding skills and constantly learning more about it. It's a challenging but rewarding journey as I strive to become more proficient in this field.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/graphic-design.jpg" alt="Skill 3" class="skill-image">
-                <p>I'm getting better at 3D modeling, but I'm still learning and working on improving. It's an ongoing process where I aim to become more skilled and proficient in 3D modeling.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills-overview-section fade-in">
-        <div class="box-container">
-            <h3 class="fade-in">Front-end</h3>
-            <div class="skill-images fade-in">
-                <img src="images/js.png" alt="Front-end Skill 1" class="skills-image">
-                <img src="images/css-3.png" alt="Front-end Skill 2" class="skills-image">
-                <img src="images/html-5.png" alt="Front-end Skill 3" class="skills-image">
-            </div>
-        </div>
-
-        <div class="box-container">
-            <h3 class="fade-in">Back-end</h3>
-            <div class="skill-images fade-in">
-                <img src="images/sql-server.png" alt="Back-end Skill 1" class="skills-image">
-                <img src="images/php.png" alt="Back-end Skill 2" class="skills-image">
-            </div>
-        </div>
-
-        <div class="box-container">
-            <h3 class="fade-in">Graphic Design</h3>
-            <div class="skill-images fade-in">
-                <img src="images/illustrator.png" alt="Graphic Design Skill 1" class="skills-image">
-                <img src="images/photoshop.png" alt="Graphic Design Skill 2" class="skills-image">
-            </div>
-        </div>
-
-        <div class="box-container">
-            <h3 class="fade-in">Motion Design</h3>
-            <div class="skill-images fade-in">
-                <img src="images/premiere-pro.png" alt="Motion Design Skill 1" class="skills-image">
-                <img src="images/after-effects.png" alt="Motion Design Skill 2" class="skills-image">
-            </div>
-        </div>
-    </section>
-
-    <section class="my-works-section fade-in">
-        <div class="works-container">
-            <h2>My Works</h2>
-            
-            <div class="main-work fade-in">
-                <img src="images/earbuds_pic_1.jpg" alt="Main Work" class="work-image fade-in">
-            </div>
-
-            <div class="additional-works">
-                <div class="work-item">
-                    <img src="images/sports_motion_graphic_pic1545.jpg" alt="Work 1" class="work-image fade-in">
-                </div>
-                <div class="work-item">
-                    <img src="images/Elin_bg.png" alt="Work 2" class="work-image fade-in">
-                </div>
-            </div>
-            <a href="works.html">
-                <button class="more-works-button fade-in">More of my works</button>
-            </a>
-        </div>
-    </section>
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="upper-footer">
-                <h1>Wanna Work Together?</h1>
-                <a href="contact.html" class="contact-button">Contact Me</a>
-                <hr class="footer-line">
-            </div>
-
-            <div class="lower-footer">
-                <div class="left-section">
-                    <div class="circle"></div>
-                    <p>Kirk Caspe</p>
-                </div>
-
-                <div class="center-section">
-                    <img class="logo-footer" src="images/logo_white.svg" alt="Kirk Caspe Logo">
-                </div>
-
-                <div class="right-section">
-                    <div class="navigation-section">
-                        <h2>Navigations</h2>
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Me</a></li>
-                                <li><a href="works.html">Works</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="social-media-section">
-                    <h2>Social Media</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="https://www.facebook.com/kirk.caspe">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/kirkcsp/">Instagram</a></li>
-                            <li><a href="https://twitter.com/kirk_csp">Twitter</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<link rel="stylesheet" href="css/main.css">
 
 
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Works</h2>
+						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>Kirk Caspe</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">About</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-5 animate-box">
+						<div>
+							<div class="item">
+								<img class="img-responsive about-img" src="images/kirk_pfp.jpg" alt="Kirk Caspe">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-push-1 animate-box">
+						<div class="about-desc">
+							<div class="">
+								<div class="item">
+									<h2><span>Kirk</span><span>Caspe</span></h2>
+								</div>
+								<div class="item">
+									<h2>Graphic/Motion Designer and Web Developer</h2>
+								</div>
+							</div>
+							<div class="desc">
+								<div>
+									<h2 class="heading">About Me</h2>
+								</div>
+								<p>Passionate Graphic/Motion Designer and Web Designer with a keen eye for detail and a knack for creating visually stunning experiences. Proficient in crafting compelling visuals across multiple platforms, I blend creativity with technical expertise to bring ideas to life. With a commitment to innovation and a drive for excellence, I specialize in delivering dynamic designs that captivate audiences and elevate brands. Let's collaborate and bring your vision to reality.</p>
+								<p class="colorlib-social-icons">
+									<a href="#"><i class="icon-facebook4"></i></a>
+									<a href="#"><i class="icon-twitter3"></i></a>
+									<a href="#"><i class="icon-googleplus"></i></a>
+									<a href="#"><i class="icon-dribbble2"></i></a>
+								</p>
+								<p><a href="contact.html" class="btn btn-primary btn-outline">Contact Me!</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Services</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="services-flex">
+							<div class="one-third">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+										<span>My Services</span>
+										<h2>Here Are Some of My Skills</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+									</div>
+									<div class="col-md-6">
+										<div class="services animate-box">
+											<h3>1 - Graphic Design</h3>
+											<ul>
+												<li>UI Design</li>
+												<li>Website &amp; Digital Design</li>
+												<li>Brading &amp; Visual Identity</li>
+												<li>Print Design</li>
+                                                <li>Illustrator</li>
+                                                <li>XD</li>
+											</ul>
+										</div>
+										<div class="services animate-box">
+											<h3>3 - Front End Development</h3>
+											<ul>
+												<li>HTML / CSS</li>
+												<li>JS</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="services animate-box">
+											<h3>2 - Illustration</h3>
+											<ul>
+												<li>Motion Graphics</li>
+												<li>Animation</li>
+												<li>Visual Effects</li>
+                                                <li>After Effects</li>
+                                                <li>Premiere Pro</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="one-forth services-img" style="background-image: url(images/graphic-design.jpg);">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Works</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Portfolio</span>
+						<h2>Done Projects</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work.html" class="work-img" style="background-image: url(images/earbuds_pic_1.jpg);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2>Earbuds Website</h2>
+									</div>
+								</div>
+							</a>
+							<div class="col-md-4 col-md-offset-4">
+								<div class="desc">
+									<p>The Earbuds project was a venture aimed at creating cutting-edge wireless earbuds...<br>
+                                        This awesome earbuds took me a while to make considering all the stuffs i had to make and code
+                                        out a website for it</p>
+									<p class="read"><a href="#">View details</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work.html" class="work-img" style="background-image: url(images/sports_motion_graphic_pic1545.jpg);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2>Sports Motion Graphic</h2>
+									</div>
+								</div>
+							</a>
+							<div class="col-md-4 col-md-offset-4">
+								<div class="desc">
+									<p>The Sports Motion Graphics project was an exciting exploration into the fusion
+                                        of sports and visual storytelling through dynamic motion graphics.
+                                        This project shows a promotional match between two of the biggest
+                                        English Premiere League teams in the country. Tottenham Hotspur Vs Chelsea</p>
+									<p class="read"><a href="#">View Details</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work.html" class="work-img" style="background-image: url(images/elin-magazine.jpg);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2>Elin</h2>
+									</div>
+								</div>
+							</a>
+							<div class="col-md-4 col-md-offset-4">
+								<div class="desc">
+									<p>The Elin Makeup project aimed to create a distinctive and impactful brand identity, including the design of a logo and label for the cosmetic line...</p>
+									<p class="read"><a href="#">View details</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work.html" class="work-img" style="background-image: url(images/quatro-hero.jpg);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2>Quatro Website</h2>
+									</div>
+								</div>
+							</a>
+							<div class="col-md-4 col-md-offset-4">
+								<div class="desc">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p class="read"><a href="#">View details</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p>A small river named Duden flows by their place and supplies.</p>
+									<p><a href="#">kirkcaspe18@gmail.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="#"><i class="icon-facebook4"></i></a>
+										<a href="#"><i class="icon-twitter3"></i></a>
+										<a href="#"><i class="icon-googleplus"></i></a>
+										<a href="#"><i class="icon-dribbble2"></i></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+                            <img class="footer-logo" src ="images/logo_black.svg">
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Contact Me</h2>
+							<p>Hit me Up!</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
